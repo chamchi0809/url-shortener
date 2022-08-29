@@ -1,6 +1,11 @@
+import * as dotenv from 'dotenv'
+dotenv.config();
+
 import express, { Request, Response, NextFunction } from 'express';
 import { connectToServer } from './db/conn';
 import recordRoutes from './routes/record';
+
+
 
 const cors = require('cors');
 const app = express();

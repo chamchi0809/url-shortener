@@ -1,6 +1,8 @@
 import { Db, MongoClient, MongoClientOptions } from 'mongodb';
 import { config } from '../config';
-const dbURI = config.ATLAS_URI;
+
+const {ATLAS_URI:dbURI} = process.env;
+
 const client = new MongoClient(dbURI);
 
 let _db :Db;

@@ -26,7 +26,7 @@ recordRoutes.route("/record/:id").get(function (req, res) {
       if (err) throw err;
       res.json(result);
     });
- });
+});
 
 //add record
 recordRoutes.route("/record/add").post(function (req, response) {
@@ -60,7 +60,7 @@ recordRoutes.route("/update/:id").post(function (req, response) {
       console.log("1 document updated");
       response.json(res);
     });
- });
+});
 
  // This section will help you delete a record
 recordRoutes.route("/:id").delete((req, response) => {
@@ -71,6 +71,6 @@ recordRoutes.route("/:id").delete((req, response) => {
     console.log("1 document deleted");
     response.json(obj);
   });
- });
+});
 
- export default recordRoutes;
+export default recordRoutes;
