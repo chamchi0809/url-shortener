@@ -4,3 +4,4 @@ config.ts
 /node_modules
 /.pnp
 .pnp.js
+/dist
